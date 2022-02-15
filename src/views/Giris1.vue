@@ -2,18 +2,22 @@
   <div class="forBackgroundColor">
     <div class="mainComponent">
       <Header para="Henüz üye değil misiniz?" buttonText="Kayıt Olun" />
-      <!-- <Bulutlar />
+      <Bulutlar />
       <MiddlePart />
       <Bottom />
-      <Footer /> -->
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
 import Header from "../components/Header.vue";
+import Bulutlar from "../components/Bulutlar.vue";
+import MiddlePart from "../components/MiddlePart.vue";
+import Bottom from "../components/Bottom.vue";
+import Footer from "../components/Footer.vue";
 
-export default { components: { Header } };
+export default { components: { Header, Bulutlar, MiddlePart, Bottom, Footer } };
 </script>
 
 <style scoped lang="scss">
