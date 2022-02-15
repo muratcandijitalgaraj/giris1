@@ -199,6 +199,7 @@ export default {
   letter-spacing: -0.01em;
   /* Gri */
   color: #818b9a;
+  padding-left: 15px;
 }
 
 .sifre {
@@ -209,6 +210,7 @@ export default {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.03);
   border-radius: 6px;
   border: none;
+  padding-left: 15px;
 
   /* form-baslik */
 
