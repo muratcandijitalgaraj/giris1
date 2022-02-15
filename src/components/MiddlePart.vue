@@ -378,7 +378,6 @@ export default {
   //what's this overflow visible?
   // overflow: visible;
   margin-top: 30rem;
-  // border: solid;
   // margin-bottom: 50px;
 }
 // tablet starts here

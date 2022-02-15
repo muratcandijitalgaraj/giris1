@@ -1,9 +1,9 @@
 <template>
   <div class="carouselComponent">
-    <Carousel class="caro" :wrap-around="true">
+    <Carousel class="caro" :autoplay="2000" :wrap-around="true">
       <Slide v-for="image in images" :key="image.id">
         <div class="carousel__item">
-          <img class="caroImg" :src="image.url" alt="" />
+          <img class="image" :src="image.url" alt="" />
           <div class="carouselTexts">{{ image.message }}</div>
         </div>
       </Slide>
@@ -65,9 +65,8 @@ export default defineComponent({
   background-color: black;
 }
 .carouselComponent {
-  width: 250px;
-  height: 400px;
-  border: solid;
+  width: 360px;
+  height: 500px;
 }
 .carouselTexts {
   width: auto;
@@ -84,18 +83,22 @@ export default defineComponent({
   /* Primary */
 
   color: #3c4e69;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 .caro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
+  width: 100%;
 }
 .pags {
   width: 50px;
 }
-.caroImg {
+.image {
+  height: 300px;
+  /* width: 500px; */
+  object-fit: contain;
 }
 </style>
