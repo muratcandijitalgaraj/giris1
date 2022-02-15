@@ -153,13 +153,12 @@ export default {
 //there's nesting here
 .telContainer {
   @include flexCenter(row);
-  // margin-bottom: 25px;
   .telefonNoContainer {
     margin-bottom: 9px;
   }
 }
 .countryCode {
-  width: 99.3px;
+  width: 100%;
   height: 60px;
   background: #ffffff;
   /* Form Shadow */
@@ -201,15 +200,19 @@ export default {
   color: #818b9a;
   padding-left: 15px;
 }
+.sifreContainer {
+  width: 468px;
+}
 
 .sifre {
-  width: 462px;
+  width: 455px;
   height: 60px;
   background: #ffffff;
   /* Form Shadow */
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.03);
   border-radius: 6px;
   border: none;
+  padding: 0;
   padding-left: 15px;
 
   /* form-baslik */
@@ -476,7 +479,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 371px;
+    width: 375px;
   }
   .sifre {
     width: 100%;

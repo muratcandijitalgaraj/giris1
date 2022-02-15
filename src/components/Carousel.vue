@@ -58,7 +58,7 @@ export default defineComponent({
   border-radius: var(--vc-pgn-height);
   border: 0;
   cursor: pointer;
-  background-color: black;
+  background-color: #a4abb6;
 }
 
 .carousel__pagination-button--active {
@@ -66,7 +66,8 @@ export default defineComponent({
 }
 .carouselComponent {
   width: 250px;
-  height: 500px;
+  height: 400px;
+  border: solid;
 }
 .carouselTexts {
   width: auto;
