@@ -37,7 +37,6 @@ export default {};
   width: 100%;
   height: auto;
   background: #ffffff;
-  /* border: 10px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,9 +49,9 @@ export default {};
   /* margin: 0; */
 }
 .container {
-  width: auto;
+  width: 1250px;
   height: auto;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 .flexContainer {
   /* display: flex;
@@ -93,11 +92,11 @@ export default {};
 .telefon {
   width: auto;
   /* justify-self: flex-end; */
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-right: 5rem;
 }
 .telefonGroup {
   height: auto;
@@ -105,7 +104,6 @@ export default {};
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
 }
 .telefonLogo {
   width: 30px;
@@ -156,7 +154,7 @@ export default {};
   margin-top: 16px;
 }
 /* tablet */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .flexContainer {
     display: flex;
     flex-direction: column;
@@ -170,12 +168,10 @@ export default {};
     align-items: center;
     padding-bottom: 10px;
     border-bottom: 1px solid #f4f4f4;
-    /* border: 1px solid black; */
   }
   .leftPart {
     margin-bottom: 1rem;
     width: auto;
-    /* border: 1px solid black; */
   }
   .footerPara {
     width: 446px;
@@ -187,7 +183,6 @@ export default {};
     /* max-width: 90%; */
   }
   .container {
-    /* border: 1px solid black; */
     position: relative;
     right: 1.5rem;
   }
