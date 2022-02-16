@@ -219,48 +219,66 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
-  data() {
-    return {
-      one: true,
-      two: false,
-      three: false,
-      four: false,
+  setup() {
+    const one = ref(true);
+    const two = ref(false);
+    const three = ref(false);
+    const four = ref(false);
+    //toggle
+    const oneIsCurrent = ref(true);
+    const oneIsOnHold = ref(false);
+    const isChecked = ref(false);
+    //date
+    const date = "";
+    //user inputs
+    //section One
+    const ePosta = "";
+    const sifre = "";
+    const sifreRepeated = "";
+    const picked = ref(new Date());
+
+    function buttonOne(e) {
+      e.preventDefault();
+      this.one = ref(false);
+      this.two = ref(true);
       //toggle
-      oneIsCurrent: true,
-      oneIsOnHold: false,
-      isChecked: false,
-      //date
-      date: "",
-      //user inputs
-      //section One
-      ePosta: "",
-      sifre: "",
-      sifreRepeated: "",
-    };
-  },
-  methods: {
-    buttonOne: function (e) {
+      this.oneIsCurrent = ref(false);
+      this.isChecked = ref(true);
+    }
+    function buttonTwo(e) {
       e.preventDefault();
-      this.one = false;
-      this.two = true;
-      //toggle
-      this.oneIsCurrent = false;
-      this.isChecked = true;
-    },
-    buttonTwo: function (e) {
+      this.two = ref(false);
+      this.three = ref(true);
+    }
+    function buttonThree(e) {
       e.preventDefault();
-      this.two = false;
-      this.three = true;
-    },
-    buttonThree: function (e) {
-      e.preventDefault();
-      this.three = false;
-      this.four = true;
-    },
-    ppUpload: function () {
+      this.three = ref(false);
+      this.four = ref(true);
+    }
+    function ppUpload() {
       this.$refs.fileInput.click();
-    },
+    }
+
+    return {
+      one,
+      two,
+      three,
+      four,
+      oneIsCurrent,
+      oneIsOnHold,
+      isChecked,
+      date,
+      ePosta,
+      sifre,
+      sifreRepeated,
+      picked,
+      buttonOne,
+      buttonTwo,
+      buttonThree,
+      ppUpload,
+    };
   },
 };
 </script>
