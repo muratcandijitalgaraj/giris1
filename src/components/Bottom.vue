@@ -194,6 +194,7 @@ export default {};
     flex-direction: column;
     position: relative;
     top: 1rem;
+    margin: 0;
   }
   .btn {
     margin-top: 1rem;
