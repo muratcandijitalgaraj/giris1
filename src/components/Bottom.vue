@@ -62,7 +62,6 @@ export default {};
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  // border: 5px solid black;
 }
 
 .frame {
@@ -78,6 +77,7 @@ export default {};
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 3rem;
 }
 .arrow {
   position: relative;
@@ -124,6 +124,7 @@ export default {};
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 3rem;
 }
 .btn {
   /* Rectangle 6 */
