@@ -380,6 +380,13 @@ export default {
   margin-top: 30rem;
   // margin-bottom: 50px;
 }
+.checkboxImg {
+  width: auto;
+  height: auto;
+  position: relative;
+  left: 4.5px;
+  top: 1px;
+}
 // tablet starts here
 @media only screen and (max-width: 1200px) {
   .container {
